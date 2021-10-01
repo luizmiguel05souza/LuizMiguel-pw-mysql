@@ -1,7 +1,7 @@
 <?php
 require_once './vendor/autoload.php';
 
-use ExemploPDOMySQL\MySQLConnection; //PDO
+use ExemploPDOMySql\MySQLConnection;; //PDO
 
 $bd = new MySQLConnection(); //PDO('mysql:host=localhost;dbname=biblioteca', 'root', '');
 
@@ -32,9 +32,10 @@ $generos = $comando->fetchAll(PDO::FETCH_ASSOC);
                     <td><?=$g['nome'] ?></td>
                     <td>
                         <a href="update.php?id=<?= $g ['id'] ?>">Editar</a>
+                        <a href="delete.php?id=<?= $g ['id'] ?>">Excluir</a>
                     </td>
                 </tr>
-            <?php endforeach ?>
+<?php endforeach ?>
         </table>
     </body>
 </html>

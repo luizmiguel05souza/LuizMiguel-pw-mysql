@@ -26,6 +26,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <input type="text" required name="nome" />
                      <button type="submit">Salvar</button>
             </form>
-        </main>
+       
     </body>
 </html>
